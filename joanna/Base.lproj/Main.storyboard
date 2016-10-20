@@ -17,11 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cG-M2-9LL" userLabel="TextField Artist">
-                                <rect key="frame" x="73" y="43" width="507" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-UF-2GC" userLabel="TestField Title">
                                 <rect key="frame" x="73" y="81" width="507" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -110,8 +105,13 @@
                                 <rect key="frame" x="278" y="396" width="45" height="30"/>
                                 <state key="normal" title="Delete"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cG-M2-9LL" userLabel="TextField Artist">
+                                <rect key="frame" x="73" y="43" width="507" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fy7-UF-2GC" firstAttribute="top" secondItem="3cG-M2-9LL" secondAttribute="bottom" constant="8" symbolic="YES" id="1jF-fP-F5d"/>
                             <constraint firstItem="TXP-dk-yPn" firstAttribute="leading" secondItem="AtQ-S0-Lgh" secondAttribute="trailing" constant="9" id="2BH-Nu-CWL"/>
@@ -131,6 +131,7 @@
                             <constraint firstItem="eHS-Yy-s0e" firstAttribute="top" secondItem="7XN-j4-4ns" secondAttribute="bottom" constant="18" id="NbU-L5-zO5"/>
                             <constraint firstItem="rUE-qf-fCH" firstAttribute="centerY" secondItem="ysG-RG-f20" secondAttribute="centerY" constant="0.5" id="O0J-K0-ryw"/>
                             <constraint firstItem="AtQ-S0-Lgh" firstAttribute="baseline" secondItem="TXP-dk-yPn" secondAttribute="baseline" constant="1" id="RvF-z9-fcQ"/>
+                            <constraint firstItem="i7o-Zl-0Hu" firstAttribute="top" secondItem="2JH-lZ-h1G" secondAttribute="bottom" constant="198" id="UbF-Sa-m7v"/>
                             <constraint firstItem="jvc-ln-5Sw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V6O-ex-DTa"/>
                             <constraint firstItem="iVe-ob-c5U" firstAttribute="top" secondItem="2JH-lZ-h1G" secondAttribute="top" id="Vyo-fZ-HX8"/>
                             <constraint firstItem="NYw-ea-jEx" firstAttribute="trailing" secondItem="iVe-ob-c5U" secondAttribute="trailing" id="XKl-Vh-gvI"/>
@@ -154,12 +155,17 @@
                             <constraint firstItem="AtQ-S0-Lgh" firstAttribute="leading" secondItem="KIF-Fj-aDC" secondAttribute="leading" id="rY5-Ek-dc6"/>
                             <constraint firstItem="rUE-qf-fCH" firstAttribute="top" secondItem="ysG-RG-f20" secondAttribute="top" constant="-6" id="vg0-G9-jaX"/>
                             <constraint firstItem="PEK-aS-bd6" firstAttribute="centerX" secondItem="ysG-RG-f20" secondAttribute="centerX" constant="-3.5" id="wTb-nX-gms"/>
-                            <constraint firstItem="i7o-Zl-0Hu" firstAttribute="top" secondItem="eHS-Yy-s0e" secondAttribute="bottom" constant="39" id="xQZ-Hi-PTO"/>
                             <constraint firstItem="Hfq-CS-VPJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="118" id="xpU-Z3-Jan"/>
                             <constraint firstItem="fy7-UF-2GC" firstAttribute="trailing" secondItem="TXP-dk-yPn" secondAttribute="trailing" id="xss-JZ-V8E"/>
                             <constraint firstItem="iVe-ob-c5U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y2j-ED-54m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="artistTextField" destination="GAF-7o-iD4" id="fN3-CS-IkP"/>
+                        <outlet property="genreTextField" destination="TXP-dk-yPn" id="gaH-xh-oDz"/>
+                        <outlet property="titleTextField" destination="fy7-UF-2GC" id="8c5-Pb-fMD"/>
+                        <outlet property="yearTextView" destination="NYw-ea-jEx" id="NnF-y5-1pZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
