@@ -155,7 +155,15 @@
                     </view>
                     <connections>
                         <outlet property="artistTextField" destination="GAF-7o-iD4" id="fN3-CS-IkP"/>
+                        <outlet property="buttonDelete" destination="7XN-j4-4ns" id="QAT-ul-DI1"/>
+                        <outlet property="buttonNew" destination="eHS-Yy-s0e" id="vNj-f8-OA0"/>
+                        <outlet property="buttonNext" destination="iVe-ob-c5U" id="S5w-dl-UCT"/>
+                        <outlet property="buttonPrev" destination="2JH-lZ-h1G" id="9jP-AM-pvO"/>
+                        <outlet property="buttonRates" destination="CUo-BT-N9H" id="stv-lF-Asr"/>
+                        <outlet property="buttonSave" destination="jvc-ln-5Sw" id="bfA-fz-HOv"/>
                         <outlet property="genreTextField" destination="TXP-dk-yPn" id="gaH-xh-oDz"/>
+                        <outlet property="numberRate" destination="acc-p3-6ep" id="wiF-Bv-4Zi"/>
+                        <outlet property="numberRecord" destination="i7o-Zl-0Hu" id="YVZ-Z9-har"/>
                         <outlet property="titleTextField" destination="fy7-UF-2GC" id="8c5-Pb-fMD"/>
                         <outlet property="yearTextView" destination="NYw-ea-jEx" id="NnF-y5-1pZ"/>
                     </connections>

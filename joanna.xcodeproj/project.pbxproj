@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC07DEA41DC1F687005E799C /* Albums.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC07DEA31DC1F687005E799C /* Albums.plist */; settings = {ASSET_TAGS = (); }; };
 		AC76926C1DAF746400BBF8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC76926B1DAF746400BBF8C5 /* AppDelegate.swift */; };
 		AC76926E1DAF746400BBF8C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC76926D1DAF746400BBF8C5 /* ViewController.swift */; };
 		AC7692711DAF746400BBF8C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC76926F1DAF746400BBF8C5 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC07DEA31DC1F687005E799C /* Albums.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Albums.plist; sourceTree = "<group>"; };
 		AC7692681DAF746400BBF8C5 /* joanna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joanna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC76926B1DAF746400BBF8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC76926D1DAF746400BBF8C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				AC7692721DAF746400BBF8C5 /* Assets.xcassets */,
 				AC7692741DAF746400BBF8C5 /* LaunchScreen.storyboard */,
 				AC7692771DAF746400BBF8C5 /* Info.plist */,
+				AC07DEA31DC1F687005E799C /* Albums.plist */,
 			);
 			path = joanna;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				AC7692761DAF746400BBF8C5 /* LaunchScreen.storyboard in Resources */,
 				AC7692731DAF746400BBF8C5 /* Assets.xcassets in Resources */,
+				AC07DEA41DC1F687005E799C /* Albums.plist in Resources */,
 				AC7692711DAF746400BBF8C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				AC7692921DAF746400BBF8C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC7692931DAF746400BBF8C5 /* Build configuration list for PBXNativeTarget "joannaTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				AC7692951DAF746400BBF8C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC7692961DAF746400BBF8C5 /* Build configuration list for PBXNativeTarget "joannaUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				AC7692981DAF746400BBF8C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
