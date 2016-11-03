@@ -49,10 +49,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        albums = NSMutableArray(contentsOfFile:"Albums");
-        // Do any additional setup after loading the view, typically from a nib.
-//        let album = albums[currentRecord];
-        
         albumsDocPath = documentsPath.stringByAppendingString("/Albums.plist")
         if !fileManager.fileExistsAtPath(albumsDocPath){
             try? fileManager.copyItemAtPath(plistCatPath!, toPath: albumsDocPath)
@@ -72,7 +68,7 @@ class ViewController: UIViewController {
     }
     
     func readFile()->NSMutableArray{
-        return NSMutableArray(contentsOfFile:plistCatPath!)!
+        return NSMutableArray(contentsOfFile:albumsDocPath)!
     }
     
 // MARK: Actions
@@ -136,6 +132,7 @@ class ViewController: UIViewController {
             artistTextField.text=""
             numberRate.text=String(0)
             numberRecord.text="Record: \(currentRecord+1)/\(albums.count)"
+//            buttonPrev.enabled=false
         }
         
         if currentRecord < albums.count{
@@ -153,16 +150,20 @@ class ViewController: UIViewController {
         let yearR = Int(yearTextView.text!) ?? 0
         let ratingR = Int(numberRate.text!) ?? 0
         if currentRecord==albums.count{
-            
-            
-            //albums.addObject(["artist":artist.text!,"title":tittle.text!,"genre":genre.text!,"rating":Int(ratingN.text!)!,"date":Int(year.text!)!])
             albums.addObject(["artist":artistR,"title":titleR,"genre":genreR,"date":yearR,"rating":ratingR])
+            
         }
+        
         if currentRecord >= 0 && currentRecord < albums.count {
             albums.replaceObjectAtIndex(currentRecord, withObject: ["artist":artistR,"title":titleR,"genre":genreR,"date":yearR,"rating":ratingR])
         }
+        
         numberRecord.text="Record: \(currentRecord+1)/\(albums.count)"
-
+    }
+    
+    func exit(){
+        albums.writeToFile(albumsDocPath, atomically: true)
+        print("Dupa")
     }
     
     @IBAction func clickBtnDelete(sender: UIButton) {
@@ -219,6 +220,11 @@ class ViewController: UIViewController {
     
     @IBAction func changeTxtArtist(sender: AnyObject) {
          buttonSave.enabled=true
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
     }
 }
 
