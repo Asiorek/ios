@@ -121,6 +121,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="lka-jh-rYU" firstAttribute="top" secondItem="bME-Ie-ZCS" secondAttribute="bottom" constant="20" id="Alu-6U-6mM"/>
                                     <constraint firstItem="fy7-UF-2GC" firstAttribute="width" secondItem="TXP-dk-yPn" secondAttribute="width" id="Fyp-KW-qUi"/>
                                     <constraint firstItem="TXP-dk-yPn" firstAttribute="width" secondItem="NYw-ea-jEx" secondAttribute="width" id="a1C-Gf-mvH"/>
                                     <constraint firstItem="3cG-M2-9LL" firstAttribute="width" secondItem="fy7-UF-2GC" secondAttribute="width" id="doa-rZ-y3z"/>
@@ -145,7 +146,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LV3-Xx-ZQM">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LV3-Xx-ZQM">
                                 <rect key="frame" x="278" y="352" width="45" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvc-ln-5Sw">
@@ -225,24 +226,25 @@
                                 </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Record 3 of 5" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i7o-Zl-0Hu" userLabel="Text Navigation">
-                                <rect key="frame" x="20" y="513" width="560" height="35"/>
+                                <rect key="frame" x="20" y="466" width="560" height="134"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="i7o-Zl-0Hu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3cQ-wU-IG8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i7o-Zl-0Hu" secondAttribute="bottom" constant="52" id="61M-b6-qEV"/>
+                            <constraint firstItem="i7o-Zl-0Hu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="25Q-NM-LYp"/>
+                            <constraint firstItem="i7o-Zl-0Hu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Hb-H9-RME"/>
                             <constraint firstItem="LV3-Xx-ZQM" firstAttribute="top" secondItem="9vj-il-Sgj" secondAttribute="bottom" constant="37" id="CXM-65-KNX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="i7o-Zl-0Hu" secondAttribute="trailing" id="Kw8-O7-6cg"/>
+                            <constraint firstItem="i7o-Zl-0Hu" firstAttribute="top" secondItem="LV3-Xx-ZQM" secondAttribute="bottom" constant="24" id="M3w-td-ccJ"/>
                             <constraint firstItem="9vj-il-Sgj" firstAttribute="centerX" secondItem="LV3-Xx-ZQM" secondAttribute="centerX" id="Ouy-vH-Btt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9eG-zj-KMA" secondAttribute="trailing" id="WdW-0h-T9K"/>
                             <constraint firstItem="9vj-il-Sgj" firstAttribute="top" secondItem="9eG-zj-KMA" secondAttribute="bottom" constant="9" id="ZUb-oG-9au"/>
-                            <constraint firstItem="i7o-Zl-0Hu" firstAttribute="top" secondItem="LV3-Xx-ZQM" secondAttribute="bottom" constant="71" id="gc2-gq-o96"/>
                             <constraint firstItem="9eG-zj-KMA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hJg-Bm-ImJ"/>
                             <constraint firstItem="9vj-il-Sgj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pH4-qS-QGy"/>
+                            <constraint firstItem="9eG-zj-KMA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="tu6-z1-S5W"/>
                             <constraint firstItem="9vj-il-Sgj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vPY-Ei-TWK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i7o-Zl-0Hu" secondAttribute="bottom" id="x9n-UV-UXp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9vj-il-Sgj" secondAttribute="trailing" id="xNn-5S-98J"/>
                         </constraints>
                     </view>

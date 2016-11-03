@@ -163,7 +163,6 @@ class ViewController: UIViewController {
     
     func exit(){
         albums.writeToFile(albumsDocPath, atomically: true)
-        print("Dupa")
     }
     
     @IBAction func clickBtnDelete(sender: UIButton) {
