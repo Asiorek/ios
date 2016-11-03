@@ -21,16 +21,25 @@
                                 <rect key="frame" x="73" y="81" width="507" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changeTxtTitle:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ObI-be-blz"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXP-dk-yPn" userLabel="TextField Genre">
                                 <rect key="frame" x="73" y="120" width="507" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changeTxtGenre:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="mOM-Hb-Hk7"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYw-ea-jEx" userLabel="TextField Year">
                                 <rect key="frame" x="73" y="159" width="507" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changeTxtYear:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Y64-p2-Ce4"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEK-aS-bd6">
                                 <rect key="frame" x="17" y="47" width="42" height="21"/>
@@ -65,18 +74,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JH-lZ-h1G">
                                 <rect key="frame" x="20" y="285" width="31" height="30"/>
                                 <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="clickBtnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ifp-BN-PfZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVe-ob-c5U">
                                 <rect key="frame" x="548" y="285" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvc-ln-5Sw">
-                                <rect key="frame" x="283" y="352" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="clickBtnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p9c-8L-sqQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHS-Yy-s0e">
                                 <rect key="frame" x="285" y="444" width="31" height="30"/>
                                 <state key="normal" title="New"/>
+                                <connections>
+                                    <action selector="clickBtnNew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WO1-8C-Rtv"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Record 3 of 5" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i7o-Zl-0Hu" userLabel="Text Navigation">
                                 <rect key="frame" x="251" y="513" width="98" height="35"/>
@@ -89,11 +103,17 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XN-j4-4ns">
                                 <rect key="frame" x="278" y="396" width="45" height="30"/>
                                 <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="clickBtnDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4g-im-kVP"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cG-M2-9LL" userLabel="TextField Artist">
                                 <rect key="frame" x="73" y="43" width="507" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changeTxtArtist:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="pj4-6s-x0v"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acc-p3-6ep" userLabel="Label Rating">
                                 <rect key="frame" x="94" y="206" width="11" height="21"/>
@@ -103,7 +123,17 @@
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CUo-BT-N9H">
                                 <rect key="frame" x="135" y="202" width="94" height="29"/>
+                                <connections>
+                                    <action selector="changeStepperRate:" destination="BYZ-38-t0r" eventType="valueChanged" id="X1Y-Z2-Yrb"/>
+                                </connections>
                             </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvc-ln-5Sw">
+                                <rect key="frame" x="283" y="352" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="clickBtnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NP7-Mc-o5a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -154,7 +184,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="artistTextField" destination="GAF-7o-iD4" id="fN3-CS-IkP"/>
+                        <outlet property="artistTextField" destination="3cG-M2-9LL" id="XGL-HZ-6wF"/>
                         <outlet property="buttonDelete" destination="7XN-j4-4ns" id="QAT-ul-DI1"/>
                         <outlet property="buttonNew" destination="eHS-Yy-s0e" id="vNj-f8-OA0"/>
                         <outlet property="buttonNext" destination="iVe-ob-c5U" id="S5w-dl-UCT"/>
