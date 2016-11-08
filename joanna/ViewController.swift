@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         
         albumsDocPath = documentsPath.stringByAppendingString("/Albums.plist")
         if !fileManager.fileExistsAtPath(albumsDocPath){
-            try? fileManager.copyItemAtPath(plistCatPath!, toPath: albumsDocPath)
+            try! fileManager.copyItemAtPath(plistCatPath!, toPath: albumsDocPath)
         }
         buttonPrev.enabled=false;
         buttonSave.enabled=false;
